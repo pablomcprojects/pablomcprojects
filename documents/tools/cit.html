@@ -151,11 +151,38 @@
     }
     a {
         color: inherit;
-        
+    }
+    .bug {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 150px;
+        text-align: center;
+        color: #FFF;
+        font-weight: bold;
+    }
+    .bugbutton {
+        width: 100px;
+        border-radius: 200px;
+        height: 100px;
+        background: rgb(239,49,40);
+        background: linear-gradient(45deg, rgba(239,49,40,1) 0%, rgba(253,113,49,1) 100%);
+        margin: auto;
+        transition: all 0.2s ease 0s;
+    }
+    .bugbutton img {
+        width: 80%;
+        margin-top: 10px
+    }
+    
+    .bug:hover .bugbutton {
+        transform: scale(0.95)
     }
 </style>
 </head>
 <body>
+<div class="bug"><a href="https://github.com/pablomcprojects/pablomcprojects.github.io/issues" target="_blank" style="text-decoration: none"><div class="bugbutton"><img src="bug.png"></div><p style="text-align: center; font-size: 18px">Report bugs</p></a></div>
+    
 <div class="content">
     <form name="formid">
 <h2>CIT Generator</h2>
